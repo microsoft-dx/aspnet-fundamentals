@@ -23,17 +23,30 @@ firstNameButton.click(function () {
 
 
 var fullNameButton = $("#fullNameButton");
+//fullNameButton.click(function () {
+//    var url = baseUrl + '?firstName=' + $("#firstNameInput").val() + '&lastName=' + $("#lastNameInput").val();
+
+//    $.ajax({
+//        url: url,
+//        dataType: 'json',
+//        success: alertMessage
+//    });
+//});
+
 fullNameButton.click(function () {
-    var url = baseUrl + '?firstName=' + $("#firstNameInput").val() + '&lastName=' + $("#lastNameInput").val();
+   var url = baseUrl + '?firstName=' + $("#firstNameInput").val() + '&lastName=' + $("#lastNameInput").val();
 
-    $.ajax({
-        url: url,
-        dataType: 'json',
-        success: alertMessage
-    });
-});
-
+   createAjaxCallOnButtonClick(this, url, alertMessage);
+})
 
 function alertMessage(message) {
     alert(message);
+}
+
+function createAjaxCallOnButtonClick(button, url, onSuccessMethod) {
+    $.ajax({
+        url: url,
+        dataType: 'json',
+        success: onSuccessMethod
+    });
 }
