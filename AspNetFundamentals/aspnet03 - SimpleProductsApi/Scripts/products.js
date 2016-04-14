@@ -13,5 +13,26 @@ function populateProductList(products) {
 }
 
 function addProductToList(product) {
+    debugger;
     $("#productsList").append('<li>' + product.Name + '</li>');
 }
+
+$("#addProductButton").click(function () {
+
+    var product = {
+        Id: $("#idInput").val(),
+        Name: $("#nameInput").val(),
+        Category: $("#categoryInput").val(),
+        Price: $("#priceInput").val()
+    };
+
+    $.ajax({
+        url: 'api/Products/AddProduct',
+        dataType: 'json',
+        method: 'post',
+        data: product,
+        success: function () {
+            addProductToList(product);
+        }
+    });
+});
