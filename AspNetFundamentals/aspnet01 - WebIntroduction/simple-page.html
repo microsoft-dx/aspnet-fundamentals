@@ -1,0 +1,31 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>First HTML Page</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+    <p>Simply press the button</p>
+    <button id="simpleButton">Simple Hello!!</button>
+    <br /><br />
+
+    <p>Enter your name and press the button!</p>
+    <input id="nameInput" type="text" placeholder="Enter your name" />
+    <button id="helloButton">Press to say Hello!</button>
+
+    <script type="text/javascript">
+        var simpleButton = document.getElementById("simpleButton");
+
+        simpleButton.addEventListener("click", function () {
+            alert("You pressed a button!!");
+        });
+
+        var helloButton = document.getElementById("helloButton");
+
+        helloButton.addEventListener("click", function () {
+            alert("Hello, " + document.getElementById("nameInput").value + "!");
+        });
+
+    </script>
+</body>
+</html>
