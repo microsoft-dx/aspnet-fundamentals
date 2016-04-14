@@ -75,6 +75,8 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="simple-javascript.js" />
+    <Content Include="simple-jquery.js" />
     <Content Include="simple-page-jquery.html" />
     <Content Include="simple-page.html" />
     <Content Include="Web.config" />
