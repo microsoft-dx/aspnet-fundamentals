@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet01 - HelloWeb", "aspn
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet02 - HelloWebApi", "aspnet02 - HelloWebApi\aspnet02 - HelloWebApi.csproj", "{5C291937-A287-4C9B-B520-4D6DDE253173}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet03 - SimpleProductsApi", "aspnet03 - SimpleProductsApi\aspnet03 - SimpleProductsApi.csproj", "{35E7F16C-399A-4DE9-BC51-BDA50B35AFBC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5C291937-A287-4C9B-B520-4D6DDE253173}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5C291937-A287-4C9B-B520-4D6DDE253173}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5C291937-A287-4C9B-B520-4D6DDE253173}.Release|Any CPU.Build.0 = Release|Any CPU
+		{35E7F16C-399A-4DE9-BC51-BDA50B35AFBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{35E7F16C-399A-4DE9-BC51-BDA50B35AFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{35E7F16C-399A-4DE9-BC51-BDA50B35AFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{35E7F16C-399A-4DE9-BC51-BDA50B35AFBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
