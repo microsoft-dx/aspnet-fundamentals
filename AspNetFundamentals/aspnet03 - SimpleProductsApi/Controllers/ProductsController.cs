@@ -17,5 +17,11 @@ namespace SimpleProductsApi.Controllers
         {
             return products;
         }
+
+        [HttpPost]
+        public void AddProduct(Product product)
+        {
+            products.Add(product);
+        }
     }
 }
