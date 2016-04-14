@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Now using jQuery</title>
+	<meta charset="utf-8" />
+</head>
+<body>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.2.js"></script>
+
+    <p>Simply press the button</p>
+    <button id="simpleButton">Simple Hello!!</button>
+    <br /><br />
+
+    <p>Enter your name and press the button!</p>
+    <input id="nameInput" type="text" placeholder="Enter your name" />
+    <button id="helloButton">Press to say Hello!</button>
+
+    <script type="text/javascript">
+        
+        var simpleButton = $("#simpleButton");
+
+        simpleButton.click(function () {
+            alert("Hello, Web!");
+        });
+
+
+        var helloButton = $("#helloButton");
+
+        helloButton.click(function () {
+            alert("Hello, " + $("#nameInput").val());
+        });
+
+    </script>
+</body>
+</html>
