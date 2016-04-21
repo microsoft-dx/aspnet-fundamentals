@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet02 - HelloWebApi", "a
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet03 - SimpleProductsApi", "aspnet03 - SimpleProductsApi\aspnet03 - SimpleProductsApi.csproj", "{35E7F16C-399A-4DE9-BC51-BDA50B35AFBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet04 - SimpleTokenAuthentication", "aspnet04 - SimpleTokenAuthentication\aspnet04 - SimpleTokenAuthentication.csproj", "{A843A8D4-6324-44E6-9B06-81246A238CF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{35E7F16C-399A-4DE9-BC51-BDA50B35AFBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35E7F16C-399A-4DE9-BC51-BDA50B35AFBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35E7F16C-399A-4DE9-BC51-BDA50B35AFBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A843A8D4-6324-44E6-9B06-81246A238CF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A843A8D4-6324-44E6-9B06-81246A238CF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A843A8D4-6324-44E6-9B06-81246A238CF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A843A8D4-6324-44E6-9B06-81246A238CF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
