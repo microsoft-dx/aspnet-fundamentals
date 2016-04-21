@@ -21,7 +21,7 @@ namespace SimpleTokenAuthentication
             app.UseWebApi(config);
         }
 
-                public void ConfigureOAuth(IAppBuilder app)
+        public void ConfigureOAuth(IAppBuilder app)
         {
             OAuthAuthorizationServerOptions OAuthServerOptions = new OAuthAuthorizationServerOptions()
             {
