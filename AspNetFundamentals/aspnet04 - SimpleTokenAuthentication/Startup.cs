@@ -19,6 +19,7 @@ namespace SimpleTokenAuthentication
             WebApiConfig.Register(config);
 
             app.UseWebApi(config);
+            app.MapSignalR();
         }
 
         public void ConfigureOAuth(IAppBuilder app)
@@ -31,9 +32,11 @@ namespace SimpleTokenAuthentication
                 Provider = new AuthorizationServerProvider()
             };
 
-            // Token Generation
             app.UseOAuthAuthorizationServer(OAuthServerOptions);
-            app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions());
+            app.UseOAuthBearerAuthentication(new OAuthBearerAuthenticationOptions()
+            {
+                Provider = new OAuthBearerTokenAuthenticationProvider()
+            });
 
         }
     }

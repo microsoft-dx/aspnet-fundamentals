@@ -1,5 +1,7 @@
 ﻿using SimpleTokenAuthentication.Models;
 using System.Collections.Generic;
+using System.Linq;
+using System.Security.Claims;
 using System.Web.Http;
 
 namespace SimpleTokenAuthentication.Controllers
@@ -16,6 +18,8 @@ namespace SimpleTokenAuthentication.Controllers
         [HttpGet]
         public List<Product> GetProducts()
         {
+            var userName = (User.Identity as ClaimsIdentity).Claims.FirstOrDefault(claim => claim.Type == "UserName").Value;
+
             return products;
         }
 

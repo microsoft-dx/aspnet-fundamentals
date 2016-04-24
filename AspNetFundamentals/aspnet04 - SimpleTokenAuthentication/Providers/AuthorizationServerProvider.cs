@@ -16,10 +16,12 @@ namespace SimpleTokenAuthentication.Providers
         public override async Task GrantResourceOwnerCredentials(OAuthGrantResourceOwnerCredentialsContext context)
         {
             context.OwinContext.Response.Headers.Add("Access-Control-Allow-Origin", new[] { "*" });
+            string userName = null;
 
             using (AuthenticationRepository authenticationRepository = new AuthenticationRepository())
             {
                 IdentityUser user = await authenticationRepository.FindUser(context.UserName, context.Password);
+                userName = user.UserName;
 
                 if (user == null)
                 {
@@ -29,7 +31,8 @@ namespace SimpleTokenAuthentication.Providers
             }
 
             var identity = new ClaimsIdentity(context.Options.AuthenticationType);
-            identity.AddClaim(new Claim("role", "user"));
+            identity.AddClaim(new Claim("Role", "User"));
+            identity.AddClaim(new Claim("UserName", userName));
 
             context.Validated(identity);
         }
