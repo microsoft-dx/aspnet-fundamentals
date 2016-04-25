@@ -20,6 +20,9 @@
             testHub.client.hello = function (message) {
                 alert(message);
             };
+
+            //$.connection.hub.qs = { 'BearerToken': "dk5CYvXXU7q7avPVH2g-vR5o74QH4GOpnVagoqX4GZZ-Yaax2We0TkxqpfDkr5za1909FlX7gjYhPZyf7NjSl0jI9lDiTFgEPguEJo3V6pCCIRqO8wnsLdBr1opkdMvXeX1XUV1FzGozCdd77GtmClZNL0tbwjNlo-lOvQBASt4a6VhSdQskpyBM8NTx-_UwPJDA5s9HNzCHz-kKmPKsL6G12ZsPHcm-Q0L15A81maU" };  
+
             $.connection.hub.logging = true;
             $.connection.hub.start();
         });
