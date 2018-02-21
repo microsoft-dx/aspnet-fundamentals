@@ -1,9 +1,9 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartup(typeof(HitCounter.Startup))]
+[assembly: OwinStartup(typeof(BasicHitCounter.Startup))]
 
-namespace HitCounter
+namespace BasicHitCounter
 {
     public class Startup
     {

@@ -25,7 +25,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspnet06", "aspnet06", "{E5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "aspnet07", "aspnet07", "{BD4D9F6C-27C7-419B-9A05-492271775720}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HitCounter", "aspnet05 - BasicHitCounter\HitCounter.csproj", "{27868C12-8AE6-4E45-985A-93FF5F4412D8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "aspnet05 - BasicHitCounter", "aspnet05 - BasicHitCounter\aspnet05 - BasicHitCounter.csproj", "{27868C12-8AE6-4E45-985A-93FF5F4412D8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleMapLogger", "aspnet06 - MapLocator\ConsoleMapLogger\ConsoleMapLogger.csproj", "{89DD70C0-4225-4F05-AF6A-FE73148AD300}"
 EndProject

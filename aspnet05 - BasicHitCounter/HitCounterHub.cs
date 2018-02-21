@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Microsoft.AspNet.SignalR;
 
-namespace HitCounter
+namespace BasicHitCounter
 {
     public class HitCounterHub : Hub
     {
